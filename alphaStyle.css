@@ -1,0 +1,77 @@
+.nav-alpha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(190, 247, 173);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 12px;
+    width: 1024px;
+    height: 120px;
+    background: #630fe0;
+    animation: 2s circ infinite;
+}
+
+@keyframes circ {
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+    }
+}
+
+.alpha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+
+    background: #52ea1f;
+
+}
+
+.alpha a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.cherche {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 70px;
+    box-shadow: 1px 0 2px blue;
+    border-radius: 12px;
+    ;
+    background-color: beige;
+    text-decoration-style: wavy;
+}
+
+.cherche input {
+    background-color: rgb(245, 245, 220);
+    border-style: none;
+}
+
+.cherche .mot {
+    width: 80%;
+    height: 65px;
+}
+
+.cherche .loupe {
+    height: 65px;
+    border-left: 1px solid #630fe0;
+}
