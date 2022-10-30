@@ -44,6 +44,8 @@
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    z-index: 1;
 }
 .alpha a:hover{
     background: linear-gradient(120deg,#379eff 0%,#1e65ff 100%);
@@ -52,6 +54,7 @@
     -webkit-text-fill-color: transparent;
 
     font-size: 180px;
+    z-index: 0;
 }
 
 @keyframes colorie{
