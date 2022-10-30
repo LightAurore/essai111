@@ -13,6 +13,10 @@ body {
     align-items: center;
     width: 100%;
     background-color: rgb(255, 237, 237);
+
+    /* background-image: url(saturn.jpg); */
+    /* background-image: url('eye.png');
+    background-size :cover; */
 }
 
 /* GLOBAL */
@@ -20,6 +24,7 @@ body {
     background-color: rgba(0, 255, 255, 0.1);
     width: 1080px;
     height: 900px;
+    border-radius: 12px;
 }
 
 /*             TOPBAR             */
@@ -29,6 +34,7 @@ body {
     align-items: center;
     background-color: blueviolet;
     height: 50px;
+
 }
 
 /* mode jour ou nuit */
@@ -43,13 +49,14 @@ body {
 
     justify-content: space-around;
     align-items: center;
-    width: 150px;
+    width: 200px;
     height: 25px;
 
     background-color: #fff;
 }
 
 .switch-label {
+    display: flex;
     padding: 0 20px 0 10px;
 }
 
@@ -77,7 +84,6 @@ body {
     cursor: pointer;
     box-shadow: inset 8px 8px 15px rgba(255, 255, 255, 0.6),
         inset 10px 10px 10px rgba(0, 0, 0, 0.25);
-    ;
 }
 
 .switch-toggle input[type="checkbox"]+label::before {
@@ -96,18 +102,33 @@ body {
     background-color: black;
     color: #fff;
     border-radius: 12px;
-
 }
 
 .switch-toggle input[type="checkbox"]:checked+label::before {
     left: 50%;
     content: "Jour";
-    color: #f6f204;
-    background-color: rgb(255, 255, 255);
+    color: #929004;
+    background-color: rgb(241, 237, 237);
     box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5),
         3px 3px 5px darkgreen;
+}
 
+/* mode dark sombre */
+.mode-cont {
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border: 1px double rgb(250, 248, 248);
     border-radius: 12px;
+    margin: 2px;
+}
+
+.mode-cont button {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
 }
 
 
@@ -167,6 +188,12 @@ header div h1 {
     box-shadow: 1px 1px 1px black;
 
     color: coral;
+    /* display: flex; */
+}
+
+.fa {
+    margin-right: 6px;
+    color: darkgoldenrod;
 }
 
 /*                MAIN      */
@@ -176,6 +203,7 @@ main {
     min-height: 900px;
     background-color: rgba(210, 105, 30, 0.1);
 }
+
 /* Aside */
 aside {
     width: 30%;
@@ -207,12 +235,13 @@ aside figure {
     height: 365px;
     box-shadow: 1px 1px 4px 1px #f6f204;
 }
-aside figure img{
+
+aside figure img {
     width: 100%;
     margin: 2px;
 }
 
-aside figure figcaption{
+aside figure figcaption {
     height: 56px;
     width: 100%;
     margin-bottom: 6px;
