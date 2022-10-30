@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Lateral</title>
+    <!-- asider menu  -->
+    <link rel="stylesheet" href="css/asiderStyle.css">
+</head>
+
+<body>
+    <button class="burger" type="button" onclick="toggleSidebar()"></button>
+    <img src="images/rocket.png" alt="logo" class="logo"/>
+
+    <aside class="sidebar">
+        <header class="sidebar-header"></header>
+        <nav>
+            <button type="button">
+                <!-- <img src="" alt="nb"/> -->
+                <a href="index.html"><img src="images/home.png" alt=""></a>
+                <span>Home</span>
+            </button type="button">
+        </nav>
+    </aside>
+
+    <script type="text/javascript">
+        const toggleSidebar = () => document.body.classList.toggle("open");
+    </script>
+</body>
+
+</html>
