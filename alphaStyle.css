@@ -36,7 +36,8 @@
 .alpha a {
     text-decoration: none;
     text-align: center;
-    font-weight: bolder;
+    font-weight: bold;
+    font-size: 20px;
     animation: 4s colorie linear infinite;
     animation-fill-mode: forwards;
 
