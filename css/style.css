@@ -206,7 +206,7 @@ main {
 
 /* Aside */
 aside {
-    width: 30%;
+    width: 20%;
     height: 900px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: .5px .5px 1px black;
@@ -275,7 +275,7 @@ hr {
 
 /* section */
 section {
-    width: 70%;
+    width: 75%;
     height: 900px;
     background-color: white;
     margin: 10px;
