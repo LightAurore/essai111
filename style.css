@@ -1,10 +1,13 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,21 +16,23 @@ body{
 }
 
 /* GLOBAL */
-.global{
+.global {
     background-color: rgba(0, 255, 255, 0.1);
     width: 1080px;
     height: 900px;
 }
+
 /*             TOPBAR             */
-.topbar{
+.topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: blueviolet;
     height: 50px;
 }
+
 /* mode jour ou nuit */
-.switch-holder{
+.switch-holder {
     display: flex;
     padding: 10px 20px;
     border-radius: 10px;
@@ -35,7 +40,7 @@ body{
         10px 10px 10px rgba(0, 0, 0, 0.2),
         inset 8px 8px 15px rgba(255, 255, 255, 0.7),
         inset 10px 10px 10px rgba(0, 0, 0, 0.2);
-    
+
     justify-content: space-around;
     align-items: center;
     width: 150px;
@@ -43,22 +48,26 @@ body{
 
     background-color: #fff;
 }
-.switch-label{
+
+.switch-label {
     padding: 0 20px 0 10px;
 }
-.switch-label i{
+
+.switch-label i {
     margin-right: 5px;
 }
-.switch-toggle{
+
+.switch-toggle {
     height: 40px;
 }
 
-.switch-toggle input[type="checkbox"]{
+.switch-toggle input[type="checkbox"] {
     position: absolute;
     opacity: 0;
     z-index: -2;
 }
-.switch-toggle input[type="checkbox"] + label{
+
+.switch-toggle input[type="checkbox"]+label {
     position: relative;
     display: inline-block;
     width: 100px;
@@ -67,17 +76,21 @@ body{
     margin: 0;
     cursor: pointer;
     box-shadow: inset 8px 8px 15px rgba(255, 255, 255, 0.6),
-        inset 10px 10px 10px rgba(0, 0, 0, 0.25);;
+        inset 10px 10px 10px rgba(0, 0, 0, 0.25);
+    ;
 }
-.switch-toggle input[type="checkbox"] + label::before{
+
+.switch-toggle input[type="checkbox"]+label::before {
     position: absolute;
     content: "Nuit";
     font-size: 13px;
     text-align: center;
     line-height: 25px;
-    top: 8px; left: 8px;
-    width: 45px; height: 25px;
-    border-radius: -3px -3px 5px rgba(255,255,255,0.5),
+    top: 8px;
+    left: 8px;
+    width: 45px;
+    height: 25px;
+    border-radius: -3px -3px 5px rgba(255, 255, 255, 0.5),
         3px 3px 5px rgba(0, 0, 0, 0.25);
     transition: 0.3s ease-in-out;
     background-color: black;
@@ -85,66 +98,139 @@ body{
     border-radius: 12px;
 
 }
-.switch-toggle input[type="checkbox"]:checked + label::before{
+
+.switch-toggle input[type="checkbox"]:checked+label::before {
     left: 50%;
     content: "Jour";
     color: #f6f204;
     background-color: rgb(255, 255, 255);
-    box-shadow: -3px -3px 5px rgba(255,255,255,0.5),
+    box-shadow: -3px -3px 5px rgba(255, 255, 255, 0.5),
         3px 3px 5px darkgreen;
-    
+
     border-radius: 12px;
 }
 
 
 /*        HEADER      */
-header{
+header {
     width: 1080px;
     height: 150px;
     background-color: rgba(153, 50, 204, 0.1);
+
+    display: flex;
 }
 
+header div {
+    width: 60%;
+    height: 100px;
+    align-self: center;
+    margin: auto auto;
+    display: flex;
+    justify-content: center;
+    border: 3px solid darkgoldenrod;
+    background-color: rgba(210, 105, 30, 0.329);
+}
+
+header div h1 {
+    align-self: center;
+    font-family: 'Roboto Slab', sans-serif;
+    -webkit-text-stroke-color: darkgoldenrod;
+    font-size: 6em;
+    -webkit-text-stroke-width: 3px;
+    letter-spacing: 4px;
+
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 /*            NAV     */
-.nav-menu{
+.nav-menu {
     width: 1080px;
     height: 25px;
     background-color: rgba(0, 255, 255, 0.1);
-    
+
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
-.nav-menu a{
+.nav-menu a {
     text-decoration: none;
     text-align: center;
     width: 100px;
     height: 21px;
     margin: 2px;
-    
+
     background-color: rgba(110, 247, 226, 0.1);
     box-shadow: 1px 1px 1px black;
-    
+
     color: coral;
 }
 
 /*                MAIN      */
-main{
+main {
     display: flex;
     width: 1080px;
     min-height: 500px;
     background-color: rgba(210, 105, 30, 0.1);
 }
 
-aside{
+aside {
     width: 30%;
     height: 485px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: .5px .5px 1px black;
     margin: 10px;
+    padding: 6px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
 }
 
-section{
+aside h2 {
+    width: 100%;
+    box-shadow: inset 1px 1px 4px 1px #f6f204;
+    text-align: center;
+}
+
+aside p {
+    margin: 6px auto;
+    color: blue;
+}
+
+aside figure {
+    width: 100%;
+    height: 200px;
+    background-color: #f6f204;
+}
+
+aside ul {
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+aside ul li {
+    margin-top: 8px;
+}
+
+aside ul li a {
+    text-decoration: none;
+}
+
+hr {
+    line-height: 6px;
+    stroke-width: 6px;
+    background-color: #f6f204;
+}
+
+
+
+section {
     width: 70%;
     height: 485px;
     background-color: white;
@@ -154,7 +240,8 @@ section{
     display: flex;
     flex-direction: column;
 }
-article{
+
+article {
     width: 100%;
     height: 240px;
     background-color: blue;
@@ -162,14 +249,14 @@ article{
 }
 
 /*                FOOTER        */
-footer{
+footer {
     width: 1080px;
     height: 150px;
     background-color: rgba(0, 0, 255, 0.1);
 }
 
 /* Mentions */
-.mentions{
+.mentions {
     width: 1080px;
     height: 50px;
     background-color: coral;
