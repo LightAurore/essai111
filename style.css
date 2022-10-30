@@ -173,13 +173,13 @@ header div h1 {
 main {
     display: flex;
     width: 1080px;
-    min-height: 500px;
+    min-height: 900px;
     background-color: rgba(210, 105, 30, 0.1);
 }
-
+/* Aside */
 aside {
     width: 30%;
-    height: 485px;
+    height: 900px;
     background-color: rgba(255, 255, 255, 1);
     box-shadow: .5px .5px 1px black;
     margin: 10px;
@@ -204,14 +204,29 @@ aside p {
 
 aside figure {
     width: 100%;
-    height: 200px;
-    background-color: #f6f204;
+    height: 365px;
+    box-shadow: 1px 1px 4px 1px #f6f204;
+}
+aside figure img{
+    width: 100%;
+    margin: 2px;
+}
+
+aside figure figcaption{
+    height: 56px;
+    width: 100%;
+    margin-bottom: 6px;
+    background-color: #f8f8e9;
+    text-align: center;
+    font-size: 40px;
 }
 
 aside ul {
     width: 100%;
     list-style: none;
     text-align: center;
+    height: 200px;
+    margin-top: 6px;
 }
 
 aside ul li {
@@ -229,10 +244,10 @@ hr {
 }
 
 
-
+/* section */
 section {
     width: 70%;
-    height: 485px;
+    height: 900px;
     background-color: white;
     margin: 10px;
     box-shadow: .5px .5px 1px black;
@@ -242,10 +257,10 @@ section {
 }
 
 article {
-    width: 100%;
-    height: 240px;
-    background-color: blue;
-    margin: 5px;
+    width: 98.5%;
+    height: 440px;
+    background-color: rgba(115, 115, 245, 0.808);
+    margin: 2.5px 5px;
 }
 
 /*                FOOTER        */
