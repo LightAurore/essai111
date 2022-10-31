@@ -22,7 +22,7 @@
 
 
 
-.alpha {
+.alpha{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@
 
 }
 
-.alpha a {
+.alpha a{
     text-decoration: none;
     text-align: center;
     font-weight: bold;
@@ -99,4 +99,21 @@
 .cherche .loupe {
     height: 65px;
     border-left: 1px solid #630fe0;
+}
+
+/* LES MEDIA QUERIES */
+@media screen and (max-width: 600px){
+    .navigation{
+        width: 200px;
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0;
+        background: #52ea1f;
+    }
+    .alpha{
+        
+        margin: 0;
+        padding: 0;
+    }
 }

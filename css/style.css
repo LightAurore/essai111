@@ -305,3 +305,10 @@ footer {
     height: 50px;
     background-color: coral;
 }
+
+
+
+/* LES MEDIA QUERIES */
+@media screen and (max-width: 600px){
+    
+}
