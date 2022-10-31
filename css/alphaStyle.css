@@ -103,6 +103,10 @@
 
 /* LES MEDIA QUERIES */
 @media screen and (max-width: 600px){
+    .nav-alpha{
+        width: auto;
+        height: auto;
+    }
     .navigation{
         width: 200px;
         height: auto;
