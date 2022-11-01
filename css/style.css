@@ -298,7 +298,7 @@ article {
 
 /*                FOOTER        */
 footer {
-    width: 1080px;
+    width: 100%;
     height: 150px;
     background-color: rgba(0, 0, 255, 0.1);
 }
@@ -313,7 +313,7 @@ footer {
 
 
 /* LES MEDIA QUERIES */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px){
     .global {
         width: 600px;
         height: 100%;
@@ -327,7 +327,7 @@ footer {
 
     .reseaux-sociaux,
     .switch-holder,
-    .compte {
+    .compte{
         max-width: 200px;
     }
 
