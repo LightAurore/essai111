@@ -38,8 +38,6 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: blueviolet;
-    height: 50px;
-
 }
 
 /* mode jour ou nuit */
@@ -199,17 +197,6 @@ header div h1 {
 .fa{
     margin-right: 6px;
     color: darkgoldenrod;
-}
-
-
-.nav-menu a:hover{
-    background-color: #ddd;
-    color: rgb(135, 5, 155);
-}
-
-.nav-menu a.active{
-    background-color: #04AA6D;
-    color: white;
 }
 
 
