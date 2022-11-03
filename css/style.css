@@ -193,7 +193,21 @@ header div h1 {
     box-shadow: 1px 1px 1px black;
 
     color: coral;
-    /* display: flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-menu a:hover{
+    color: black;
+    background-color: blueviolet;
+    width: 7.25rem;
+    height: 2.4rem;
+}
+.nav-menu a:active{
+    color: rgb(217, 242, 78);
+}
+.nav-menu a:visited{
+    background-color: rgb(122, 237, 104);
 }
 
 .fa{
